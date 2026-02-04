@@ -2,15 +2,15 @@
 
 ### Download the repository
 ```
-git clone <URL>
+git clone https://github.com/NixOS-Projects/NixApp-Flakes.git
 ```
 
-### Copy/Paste the flake files in your directory
+### Enter into an app
 ```
-cp <app>/flake.* <output>
+cd NixApp-Flakes/<app>
 ```
 
-### Enter into flake environment
+### Run the app
 ```
 nix develop
 ```

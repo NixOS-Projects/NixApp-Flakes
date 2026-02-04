@@ -1,11 +1,11 @@
 {
-  description = "Android Studio + Kotlin";
+  description = "Android Studio";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
   };
 
-  outputs = { self, nixpkgs }:
+  outputs = { nixpkgs }:
     let
       system = "x86_64-linux";
       pkgs = import nixpkgs {
@@ -23,9 +23,8 @@
         ];
 
         shellHook = ''
-          echo "Android Studio Environment Loaded"
-          
           export JAVA_HOME=${pkgs.jdk17}         
+          android-studio
         '';
       };
     };
