@@ -15,5 +15,5 @@ cd NixApp-Flakes/<app>
 nix develop
 ```
 
-#### !! IMPORTANT !! Add these lines in your configuration.nix
+#### !! IMPORTANT !! Add this line in your configuration.nix
 > nix.settings.experimental-features = [ "nix-command" "flakes" ];
