@@ -24,7 +24,7 @@
 
         shellHook = ''
           export JAVA_HOME=${pkgs.jdk17}         
-          android-studio
+          android-studio && exit
         '';
       };
     };
