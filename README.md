@@ -1,6 +1,6 @@
 # NixApp-Flakes
 
-### Install the repository
+### Download the repository
 ```
 git clone <URL>
 ```
